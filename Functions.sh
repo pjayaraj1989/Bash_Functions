@@ -10,3 +10,7 @@ RunCmd() {
     exit $ret_code
   fi
 }
+
+
+# using sed to delete a string in a bunch of files
+sed -i -e 's/#define FUNC_.*_one hello_.*_world//g' *.c
